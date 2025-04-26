@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users Cards</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .dark-mode {
+            background-color: #1a202c;
+            color: #f7fafc;
+        }
+
+        .dark-mode .bg-white {
+            background-color: #2d3748;
+        }
+
+        .dark-mode .text-gray-800 {
+            color: #f7fafc;
+        }
+
+        .dark-mode .text-gray-600 {
+            color: #e2e8f0;
+        }
+
+        input {
+            outline: none;
+        }
+    </style>
+
+</head>
+
+<body class="bg-gray-100 min-h-screen flex flex-col items-center p-6">
+
+    <div class="flex items-center justify-between w-full max-w-7xl mb-6">
+        <input id="searchInput" type="text" placeholder="Search users..."
+            class="w-1/2 p-2 border border-gray-300 rounded-xl" />
+        <button id="darkModeButton"  class="ml-4 p-2 bg-gray-800 text-white rounded-xl">
+            Toggle Dark Mode
+        </button>
+    </div>
+
+    <div id="row" class="flex flex-wrap justify-center gap-6 max-w-7xl">
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
